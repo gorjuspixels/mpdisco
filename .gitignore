@@ -14,8 +14,9 @@ logs
 results
 
 npm-debug.log
-node_modules/
-bower_components/
+node_modules
+music
+bower_components
 
 *.iml
 
