@@ -73,8 +73,6 @@ var MasterMode = BasicMode.extend({
       return;
     }
 
-    console.log('setMaster', client)
-
     this.master = client.info.userid;
 
     debug('Master changed: %s', this.master);

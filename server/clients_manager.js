@@ -72,11 +72,6 @@ var ClientsManager = Class.extend({
       this.sendClientsList(client);
     }.bind(this));
 
-    client.on('changedj', function(userID) {
-      console.log('changedj', userID)
-      this.emit('changedj', thsi.get(userID))
-    }.bind(this));
-
     if (client.handshake.name) {
       this.performIdentification(client, client.handshake.name);
     }

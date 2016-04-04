@@ -91,7 +91,6 @@ _.extend(init, {
         });
 
         network.on('coverart', function(res) {
-            console.log('coverart', res)
             coverCursor.edit(res.url);
         });
 
