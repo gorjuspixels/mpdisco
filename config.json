@@ -1,0 +1,6 @@
+{
+  "music_directory": "/vagrant/mpdisco/music",
+  "secret": "secret",
+  "session_key": "mpdisco.sid",
+  "master_time": 60
+}
