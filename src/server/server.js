@@ -24,7 +24,7 @@ var ClientsManager = require('./clients_manager.js');
 
 export default class Server {
   static defaults = {
-    serverPort: 3000
+    serverPort: 8080
   };
 
   constructor(mpd, mode, options) {

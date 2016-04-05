@@ -55,6 +55,11 @@ const config = {
     cachedAssets: VERBOSE
   },
 
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
+  },
+
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
   ],

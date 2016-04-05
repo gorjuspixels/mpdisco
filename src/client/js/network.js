@@ -2,7 +2,7 @@ import io from 'socket.io-client';
 import _ from 'lodash';
 
 class Network {
-  constructor(host = window.location.hostname, port = 3000) {
+  constructor(host = window.location.hostname, port = 8080) {
     this.url = `ws://${host}:${port}/`;
 
     this.socket = io.connect(this.url);
