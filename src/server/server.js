@@ -21,6 +21,8 @@ const debug = require('debug')('mpdisco:server');
 var metadata = require('./meta_data.js');
 var upload = require('./file_upload.js');
 var ClientsManager = require('./clients_manager.js');
+var proxy = require('express-http-proxy');
+var url = require('url');
 
 export default class Server {
   static defaults = {

@@ -60,7 +60,7 @@ export default class Logo extends Component {
                                  transitionLeaveTimeout={4000}>
           {image}
         </ReactCSSTransitionGroup>
-        <h1>mpdisco</h1>
+        <h1>Music Sync FTW</h1>
       </hgroup>
     );
   }

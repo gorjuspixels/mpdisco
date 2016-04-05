@@ -75,6 +75,10 @@ class MasterMode extends Component {
                       me={me}
                       />
         </main>
+
+        <audio src={ 'http://' + window.location.hostname + ':5000' } autoPlay>
+          Your browser does not support the <code>audio</code> element.
+        </audio>
       </div>
     );
   }
