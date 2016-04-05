@@ -42,14 +42,14 @@ export default class AnonymousListener extends Component {
   }
 
   anonymousView (classes) {
-    const name =
+    const name = this.props.you ?
+    (
       <span>
-        <div>
-          <span>You</span>
-          <a href="#" className="listener-login" onClick={this.showLogin.bind(this)}>Login?</a>
-        </div>
-        { !this.props.you ? <div>Anonymous Listener</div> : null }
+        <span>You</span>
+        <a href="#" className="listener-login" onClick={this.showLogin.bind(this)}>Login?</a>
       </span>
+    ) :
+    (<span>Anonymous Listener</span>);
 
     return (
       <li className={classes}>
