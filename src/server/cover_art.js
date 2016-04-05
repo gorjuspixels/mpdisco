@@ -81,7 +81,7 @@ class CoverArt {
           debug('Best choice:', results);
 
           if (!results) {
-            reject('No releases found.');
+            return reject('No releases found.');
           }
 
           const urls = results.map(result => `http://coverartarchive.org/release/${result.id}/front-250`);

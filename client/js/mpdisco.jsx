@@ -7,7 +7,7 @@ var MasterMode = require('./master_mode.jsx');
 
 var MPDiscoController = require('./mpdisco_controller.js');
 
-var network = new Network(window.location.hostname, 8080);
+var network = new Network(window.location.hostname, 3000);
 
 var controller = new MPDiscoController(network);
 
