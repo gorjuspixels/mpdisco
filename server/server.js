@@ -18,7 +18,7 @@ var ClientsManager = require('./clients_manager.js');
 
 var Server = Class.extend({
     defaults: {
-        serverPort: 3000
+        serverPort: 8080
     },
     init: function(mpd, mode, options) {
         this.options = _.defaults(this.defaults, options);
