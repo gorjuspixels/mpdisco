@@ -162,11 +162,17 @@ export default class PlaylistItem extends Component {
       };
     }
 
+    let imageStyles = {
+      baskcgroundImage: `url(/covers/${item.get('artist')}/${item.get('album')})`,
+      backgroundSize: 'cover',
+      backgroundPosition: '50% 50%'
+    };
+
     const result = (
       <li className={classes}
         {...events}
       >
-        <div className="image"/>
+        <div className="image" style={ imageStyles }/>
         {details}
         <span className="time">{time}</span>
       </li>
