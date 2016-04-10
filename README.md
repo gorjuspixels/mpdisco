@@ -1,28 +1,31 @@
-mpdisco
+Music Sync FTW
 =======
 
-[MPDisco Homepage](http://gerev.github.io/mpdisco)
+## Final Project - Spec. Topics in Software Engineering: Cloud Computing
 
-A team-controlled music server based on mpd.
+Group Members:
 
-Accessing the MPDisco server puts each user, after logging in, in a rotating DJ queue.
-Each user will be given one hour (by default) to control the playlist and music player. 
+- Yasha Prikhodko
+- Sonal Keshav
+- Henry Julian
+
+The application allows many clients to tune in to the same audio stream, controlled by a single DJ (1 of the clients). The DJ, by default, is given 60 minutes of air time. After which, the privilege is transferred to the next listener in line.
+
+The audio stream is created and served by Media Player Daemon.
+
 
 Installation
 ------------
 
-First off, MPDisco depends on the installation of [MPD](http://www.musicpd.org/) on the server.
-Follow the [installation instructions](http://mpd.wikia.com/wiki/Install) to install.
+Make sure to install [Media Player Daemon](http://www.musicpd.org/) on the server. You can follow [these installation instructions](http://mpd.wikia.com/wiki/Install) to install it.
 
-Using NPM, run:
+Using NPM install dependencies, run:
 
-```npm install mpdisco```
-
-Modify `config.json` to change the music directory, play time for each DJ and session secret (recommended).
+```npm install```
 
 Running
 -------
 
-To run MPDisco, in the installation directory, use:
+To build & run the app, run:
 
-```node index.js```
+```npm start```
