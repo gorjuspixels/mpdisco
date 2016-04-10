@@ -90,6 +90,7 @@ export default class Server {
       }
     });
 
+    // Route to get the cover of a specific album
     app.get('/covers/:artist/:album', (req, res) => {
       const mm = require('./meta_data.js'),
             artist = mm.safeName(req.params.artist),
@@ -107,6 +108,7 @@ export default class Server {
       });
     });
 
+    // Route to upload tracks
     app.all('/upload', this.uploadHandler);
   }
 
